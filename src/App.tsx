@@ -2,8 +2,7 @@ import { Col, Image, Row, Container, Card } from 'react-bootstrap';
 import './App.css';
 import Portrait from './assets/portrait.jpeg';
 import Icon from '@mdi/react';
-import { mdiLinkedin, mdiGithub, mdiEmail, mdiBriefcaseOutline, mdiSchoolOutline, mdiYoutube } from '@mdi/js';
-
+import { mdiLinkedin, mdiGithub, mdiEmail, mdiYoutube, mdiPostOutline } from '@mdi/js';
 
 const App = () => {
 	return <div className='page-container'>
@@ -26,16 +25,19 @@ const App = () => {
 							MS in Computer Science, University of Florida, 2023
 						</p>
 						<div>
-							<a href='https://www.linkedin.com/in/rishabhtatiraju/' target='_blank' rel='noreferrer'>
+							<a href='https://www.linkedin.com/in/rishabhtatiraju/' target='_blank' rel='noreferrer' title='LinkedIn'>
 								<Icon color="white" path={mdiLinkedin} size={1} className='m-3' />
 							</a>
-							<a href='https://www.github.com/rtdtwo/' target='_blank' rel='noreferrer'>
+							<a href='https://www.github.com/rtdtwo/' target='_blank' rel='noreferrer' title='GitHub @rtdtwo'>
 								<Icon color="white" path={mdiGithub} size={1} className='m-3' />
 							</a>
-							<a href='https://www.youtube.com/channel/UCyX2NEezmwNm5IkE3gVLEbg' target='_blank' rel='noreferrer'>
+							<a href='https://rtdtwo.medium.com' target='_blank' rel='noreferrer' title='Medium Blog'>
+								<Icon color="white" path={mdiPostOutline} size={1} className='m-3' />
+							</a>
+							<a href='https://www.youtube.com/channel/UCyX2NEezmwNm5IkE3gVLEbg' target='_blank' rel='noreferrer' title='YouTube'>
 								<Icon color="white" path={mdiYoutube} size={1.2} className='m-3' />
 							</a>
-							<a href='mailto:tatiraju.rishabh@gmail.com' target='_blank' rel='noreferrer'>
+							<a href='mailto:tatiraju.rishabh@gmail.com' target='_blank' rel='noreferrer' title='Email'>
 								<Icon color="white" path={mdiEmail} size={1} className='m-3' />
 							</a>
 						</div>
